@@ -15,6 +15,7 @@
 		E5228EB0252602AF00CFB05F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5228EAE252602AF00CFB05F /* LaunchScreen.storyboard */; };
 		E5228EBB252602AF00CFB05F /* timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5228EBA252602AF00CFB05F /* timerTests.swift */; };
 		E5228EC6252602B000CFB05F /* timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5228EC5252602B000CFB05F /* timerUITests.swift */; };
+		E5DD3F5E2528500D00CEF910 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DD3F5D2528500D00CEF910 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E5228EC1252602B000CFB05F /* timerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5228EC5252602B000CFB05F /* timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerUITests.swift; sourceTree = "<group>"; };
 		E5228EC7252602B000CFB05F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DD3F5D2528500D00CEF910 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				E5228EA3252602AF00CFB05F /* AppDelegate.swift */,
 				E5228EA5252602AF00CFB05F /* SceneDelegate.swift */,
 				E5228EA7252602AF00CFB05F /* ViewController.swift */,
+				E5DD3F5D2528500D00CEF910 /* SecondViewController.swift */,
 				E5228EA9252602AF00CFB05F /* Main.storyboard */,
 				E5228EAC252602AF00CFB05F /* Assets.xcassets */,
 				E5228EAE252602AF00CFB05F /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DD3F5E2528500D00CEF910 /* SecondViewController.swift in Sources */,
 				E5228EA8252602AF00CFB05F /* ViewController.swift in Sources */,
 				E5228EA4252602AF00CFB05F /* AppDelegate.swift in Sources */,
 				E5228EA6252602AF00CFB05F /* SceneDelegate.swift in Sources */,
