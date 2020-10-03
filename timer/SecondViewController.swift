@@ -8,11 +8,21 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    var DataImage:[UIImage] = [
+        UIImage(named: "image6")!
+    ]
+    var TodayIndex:Int = 0
+    
+    var x : UIImage!
+    let rect:CGRect = CGRect(x:0, y:0, width:200, height:300)
+    
+    @IBOutlet weak var UpImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        UpImage.frame = rect
+        UpImage.image = x
+        
     }
     
 

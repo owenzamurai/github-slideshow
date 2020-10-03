@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var SlideShow: UIButton!
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     // 配列に指定するindex番号を宣言
     var nowIndex:Int = 0
-    
+
     // スライドショーさせる画像の配列を宣言
     var appimage:[UIImage] = [
         UIImage(named: "image1")!,
@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        ImageView.isUserInteractionEnabled = true
     }
     
 
@@ -108,7 +109,16 @@ class ViewController: UIViewController {
                 ImageView.image = appimage[nowIndex]
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           // segueから遷移先のResultViewControllerを取得する
+           let secondViewController:SecondViewController = segue.destination as! SecondViewController
+           // 遷移先のResultViewControllerで宣言しているViewに値を代入して渡す
+        secondViewController.x = appimage[nowIndex]
+    }
     
+    @IBAction func BackHome(_ segue: UIStoryboardSegue) {
+            // 他の画面から segue を使って戻ってきた時に呼ばれる
+        }
     
     
     
